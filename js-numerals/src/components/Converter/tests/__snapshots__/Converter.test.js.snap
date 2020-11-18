@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Converter/> should renders without errors 1`] = `
+<div>
+  <div
+    class="input"
+  >
+    <input
+      data-testid="input"
+      placeholder="write an arabic number"
+      type="text"
+    />
+    <div
+      class="result"
+      data-testid="result"
+    />
+  </div>
+</div>
+`;

@@ -16,8 +16,9 @@ function Converter() {
                 placeholder="write an arabic number"
                 type="text"
                 onChange={handleChange}
+                data-testid="input"
             />
-            <div className='result' >
+            <div className='result' data-testid="result" >
                 {result}
             </div>
         </div>
