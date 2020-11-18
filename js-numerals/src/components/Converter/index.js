@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LanguageConvert } from '../../utils';
+import { LanguageConvert, InputNumConverter } from '../../utils';
 import './Converter.css';
 
 function Converter() {
@@ -8,7 +8,7 @@ function Converter() {
         setValue(target.value)
     }
     const number = LanguageConvert(value)
-
+    const result = InputNumConverter(number)
 
     return (
         <div className="input">
@@ -18,7 +18,7 @@ function Converter() {
                 onChange={handleChange}
             />
             <div className='result' >
-                {number}
+                {result}
             </div>
         </div>
     );
